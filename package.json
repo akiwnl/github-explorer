@@ -5,6 +5,10 @@
   "repository": "git@github.com:akiwnl/github-explorer.git",
   "author": "akiwnl <carvalhokaike69@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "dev": "webpack serve",
+    "build": "cross-env NODE_ENV=production webpack"
+  },
   "dependencies": {
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
@@ -15,7 +19,12 @@
     "@babel/preset-env": "^7.25.9",
     "@babel/preset-react": "^7.25.9",
     "babel-loader": "^9.2.1",
+    "cross-env": "^7.0.3",
+    "css-loader": "^7.1.2",
     "html-webpack-plugin": "^5.6.3",
+    "node-sass": "^9.0.0",
+    "sass-loader": "^16.0.2",
+    "style-loader": "^4.0.0",
     "webpack": "^5.95.0",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^5.1.0"
